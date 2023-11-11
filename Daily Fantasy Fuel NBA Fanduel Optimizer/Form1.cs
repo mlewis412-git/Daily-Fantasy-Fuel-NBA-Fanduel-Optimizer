@@ -11,6 +11,9 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
 {
     public partial class Form1 : Form
     {
+
+        private List<string> excludedPlayerNames = new List<string>();
+
         public Form1()
         {
             InitializeComponent();
@@ -19,8 +22,29 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
         private async void Form1_Load(object sender, EventArgs e)
         {
             // If you want to load the data when the form loads, call the method here.
-            await DisplayDataInGridView();
+            await PopulateSlateComboBox();
+            await DisplayDataInGridView(); 
+
         }
+        private async Task PopulateSlateComboBox()
+{
+    // Send HTTP request to the page
+    using (HttpClient client = new HttpClient())
+    {
+        var response = await client.GetAsync("https://www.dailyfantasyfuel.com/nba/projections/fanduel");
+        var pageContents = await response.Content.ReadAsStringAsync();
+
+        HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
+        doc.LoadHtml(pageContents);
+
+        // TODO: Parse the HTML to find the slate options
+        // For each slate option found, add it to comboBoxSlateSelection
+        // Example: comboBoxSlateSelection.Items.Add("Slate Name");
+    }
+}
+
+
+
         public async Task<DataTable> GetTableFromWebAsync(string url)
         {
             // Initialize the HttpClient
@@ -71,15 +95,14 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
 
 
         }
-        private async Task DisplayDataInGridView()
+        private async Task DisplayDataInGridView(string url = "https://www.dailyfantasyfuel.com/nba/projections/fanduel")
         {
-            string url = "https://www.dailyfantasyfuel.com/nba/projections/fanduel";
             try
             {
                 DataTable table = await GetTableFromWebAsync(url);
                 this.Invoke(new Action(() =>
                 {
-                    dataGridView1.DataSource = table; // This must be done on the UI thread
+                    dataGridView1.DataSource = table;
                 }));
             }
             catch (Exception ex)
@@ -87,6 +110,7 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
+
         public class Player
         {
             public List<string> Positions { get; set; } // List to hold multiple positions
@@ -178,42 +202,67 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
             listViewFinalTeam.Columns[nameColumnIndex].Width = listViewFinalTeam.Width - totalWidthOfOtherColumns - SystemInformation.VerticalScrollBarWidth;
         }
 
+        private void AddPlayerToExclusionList(string playerName)
+        {
+            if (!excludedPlayerNames.Contains(playerName))
+            {
+                excludedPlayerNames.Add(playerName);
+            }
+        }
+
+
 
         private async Task<List<Player>> GetAllPlayerDataAsync()
         {
-            DataTable dataTable = await GetTableFromWebAsync("https://www.dailyfantasyfuel.com/nba/projections/fanduel");
+            DataTable dataTable = await GetTableFromWebAsync(textBox1.Text);
             List<Player> players = new List<Player>();
 
             foreach (DataRow row in dataTable.Rows)
             {
-                Player player = new Player
-                {
-                    Positions = row["POS"].ToString().Split('/').ToList(), // Assuming positions are separated by a '/'
-                    Name = row["NAME"].ToString(),
-                    Salary = double.TryParse(row["SALARY"].ToString().Replace("$", "").Replace("k", "000"), out double salary) ? salary : 0,
-                    Rest = int.TryParse(row["REST"].ToString(), out int rest) ? rest : 0,
-                    Start = row["START"].ToString(),
-                    Team = row["TEAM"].ToString(),
-                    Opp = row["OPP"].ToString(),
-                    DvP = int.TryParse(row["DvP"].ToString(), out int dvp) ? dvp : 0,
-                    FDProjectedPoints = double.TryParse(row["FD FP PROJECTED"].ToString(), out double fdPts) ? fdPts : 0,
-                    ValueProjected = double.TryParse(row["VALUE PROJECTED"].ToString(), out double valueProjected) ? valueProjected : 0,
-                    FPMin = double.TryParse(row["FP MIN"].ToString(), out double fpMin) ? fpMin : 0,
-                    FPAvg = double.TryParse(row["FP AVG"].ToString(), out double fpAvg) ? fpAvg : 0,
-                    FPMax = double.TryParse(row["FP MAX"].ToString(), out double fpMax) ? fpMax : 0,
-                    OverUnder = double.TryParse(row["O/U"].ToString(), out double overUnder) ? overUnder : 0,
-                    TeamPoints = double.TryParse(row["TM PTS"].ToString(), out double teamPoints) ? teamPoints : 0
-                };
+                string playerName = row["NAME"].ToString();
 
-                players.Add(player);
+                // Check if the player is in the excluded list
+                if (!excludedPlayerNames.Contains(playerName))
+                {
+                    Player player = new Player
+                    {
+                        Positions = row["POS"].ToString().Split('/').ToList(),
+                        Name = playerName,
+                        Salary = double.TryParse(row["SALARY"].ToString().Replace("$", "").Replace("k", "000"), out double salary) ? salary : 0,
+                        Rest = int.TryParse(row["REST"].ToString(), out int rest) ? rest : 0,
+                        Start = row["START"].ToString(),
+                        Team = row["TEAM"].ToString(),
+                        Opp = row["OPP"].ToString(),
+                        DvP = int.TryParse(row["DvP"].ToString(), out int dvp) ? dvp : 0,
+                        FDProjectedPoints = double.TryParse(row["FD FP PROJECTED"].ToString(), out double fdPts) ? fdPts : 0,
+                        ValueProjected = double.TryParse(row["VALUE PROJECTED"].ToString(), out double valueProjected) ? valueProjected : 0,
+                        FPMin = double.TryParse(row["FP MIN"].ToString(), out double fpMin) ? fpMin : 0,
+                        FPAvg = double.TryParse(row["FP AVG"].ToString(), out double fpAvg) ? fpAvg : 0,
+                        FPMax = double.TryParse(row["FP MAX"].ToString(), out double fpMax) ? fpMax : 0,
+                        OverUnder = double.TryParse(row["O/U"].ToString(), out double overUnder) ? overUnder : 0,
+                        TeamPoints = double.TryParse(row["TM PTS"].ToString(), out double teamPoints) ? teamPoints : 0
+                    };
+
+                    players.Add(player);
+                }
             }
 
             return players;
         }
+
+
         private async void button1_Click_1(object sender, EventArgs e)
         {
             try
             {
+                // Read the player name from the TextBox and add to the exclusion list
+                string playerNameToExclude = textBox2.Text.Trim(); // Assuming 'txtPlayerName' is your TextBox
+                if (!string.IsNullOrEmpty(playerNameToExclude))
+                {
+                    excludedPlayerNames.Add(playerNameToExclude);
+                  //  textBox2.Clear(); // Optionally clear the TextBox
+                }
+
                 // Define your position requirements
                 Dictionary<string, int> positionRequirements = new Dictionary<string, int>
         {
@@ -371,6 +420,7 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
             {
                 adjustedPoints *= 0.9; // Decrease points by 10% for tough matchups
             }
+
             // Adjust based on Over/Under (O/U)
             // Let's assume a higher O/U means a higher-scoring game, which is better for fantasy points.
             if (player.OverUnder > 220) // If it's expected to be a high-scoring game
@@ -385,10 +435,34 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                 adjustedPoints *= 1.05; // Increase points by 5%
             }
 
+
+
+            // Additional conditions
+            if (player.Rest < 1) // If REST is less than 1, give a 2% increase
+            {
+                adjustedPoints *= 1.02; // Increase points by 2%
+            }
+
+            if (player.Start == "EXP") // If START is "EXP", give a 5% increase
+            {
+                adjustedPoints *= 1.05; // Increase points by 5%
+            }
+
             return adjustedPoints;
         }
 
-
-
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            string url = textBox1.Text;
+            if (!string.IsNullOrWhiteSpace(url))
+            {
+                await DisplayDataInGridView(url);
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid URL.");
+            }
+        }
     }
-}
+    }
+
