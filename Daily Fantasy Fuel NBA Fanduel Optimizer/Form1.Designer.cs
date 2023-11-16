@@ -35,6 +35,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dVPcheckBox1 = new System.Windows.Forms.CheckBox();
+            this.OverUndercheckBox2 = new System.Windows.Forms.CheckBox();
+            this.totalTeamPointscheckBox3 = new System.Windows.Forms.CheckBox();
+            this.RestcheckBox4 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.StartcheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,11 +113,82 @@
             this.label1.Text = "Exclude Player";
             this.label1.UseWaitCursor = true;
             // 
+            // dVPcheckBox1
+            // 
+            this.dVPcheckBox1.AutoSize = true;
+            this.dVPcheckBox1.Location = new System.Drawing.Point(1053, 468);
+            this.dVPcheckBox1.Name = "dVPcheckBox1";
+            this.dVPcheckBox1.Size = new System.Drawing.Size(48, 19);
+            this.dVPcheckBox1.TabIndex = 7;
+            this.dVPcheckBox1.Text = "DVP";
+            this.dVPcheckBox1.UseVisualStyleBackColor = true;
+            this.dVPcheckBox1.UseWaitCursor = true;
+            // 
+            // OverUndercheckBox2
+            // 
+            this.OverUndercheckBox2.AutoSize = true;
+            this.OverUndercheckBox2.Location = new System.Drawing.Point(1183, 443);
+            this.OverUndercheckBox2.Name = "OverUndercheckBox2";
+            this.OverUndercheckBox2.Size = new System.Drawing.Size(86, 19);
+            this.OverUndercheckBox2.TabIndex = 8;
+            this.OverUndercheckBox2.Text = "Over Under";
+            this.OverUndercheckBox2.UseVisualStyleBackColor = true;
+            this.OverUndercheckBox2.UseWaitCursor = true;
+            // 
+            // totalTeamPointscheckBox3
+            // 
+            this.totalTeamPointscheckBox3.AutoSize = true;
+            this.totalTeamPointscheckBox3.Location = new System.Drawing.Point(1053, 443);
+            this.totalTeamPointscheckBox3.Name = "totalTeamPointscheckBox3";
+            this.totalTeamPointscheckBox3.Size = new System.Drawing.Size(118, 19);
+            this.totalTeamPointscheckBox3.TabIndex = 9;
+            this.totalTeamPointscheckBox3.Text = "Total Team Points";
+            this.totalTeamPointscheckBox3.UseVisualStyleBackColor = true;
+            this.totalTeamPointscheckBox3.UseWaitCursor = true;
+            // 
+            // RestcheckBox4
+            // 
+            this.RestcheckBox4.AutoSize = true;
+            this.RestcheckBox4.Location = new System.Drawing.Point(1183, 468);
+            this.RestcheckBox4.Name = "RestcheckBox4";
+            this.RestcheckBox4.Size = new System.Drawing.Size(48, 19);
+            this.RestcheckBox4.TabIndex = 10;
+            this.RestcheckBox4.Text = "Rest";
+            this.RestcheckBox4.UseVisualStyleBackColor = true;
+            this.RestcheckBox4.UseWaitCursor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1053, 421);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 15);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Modifiers ";
+            this.label2.UseWaitCursor = true;
+            // 
+            // StartcheckBox
+            // 
+            this.StartcheckBox.AutoSize = true;
+            this.StartcheckBox.Location = new System.Drawing.Point(1053, 490);
+            this.StartcheckBox.Name = "StartcheckBox";
+            this.StartcheckBox.Size = new System.Drawing.Size(67, 19);
+            this.StartcheckBox.TabIndex = 12;
+            this.StartcheckBox.Text = "Starting";
+            this.StartcheckBox.UseVisualStyleBackColor = true;
+            this.StartcheckBox.UseWaitCursor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1473, 525);
+            this.Controls.Add(this.StartcheckBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.RestcheckBox4);
+            this.Controls.Add(this.totalTeamPointscheckBox3);
+            this.Controls.Add(this.OverUndercheckBox2);
+            this.Controls.Add(this.dVPcheckBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
@@ -138,5 +215,11 @@
         private Button button2;
         private TextBox textBox2;
         private Label label1;
+        private CheckBox dVPcheckBox1;
+        private CheckBox OverUndercheckBox2;
+        private CheckBox totalTeamPointscheckBox3;
+        private CheckBox RestcheckBox4;
+        private Label label2;
+        private CheckBox StartcheckBox;
     }
 }

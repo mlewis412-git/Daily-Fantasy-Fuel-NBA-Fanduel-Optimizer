@@ -22,26 +22,9 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
         private async void Form1_Load(object sender, EventArgs e)
         {
             // If you want to load the data when the form loads, call the method here.
-            await PopulateSlateComboBox();
             await DisplayDataInGridView(); 
 
         }
-        private async Task PopulateSlateComboBox()
-{
-    // Send HTTP request to the page
-    using (HttpClient client = new HttpClient())
-    {
-        var response = await client.GetAsync("https://www.dailyfantasyfuel.com/nba/projections/fanduel");
-        var pageContents = await response.Content.ReadAsStringAsync();
-
-        HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
-        doc.LoadHtml(pageContents);
-
-        // TODO: Parse the HTML to find the slate options
-        // For each slate option found, add it to comboBoxSlateSelection
-        // Example: comboBoxSlateSelection.Items.Add("Slate Name");
-    }
-}
 
 
 
@@ -410,40 +393,32 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
             // Start with base projected points
             double adjustedPoints = player.FDProjectedPoints;
 
-            // Adjust based on Defense versus Position (DvP)
-            // In this system, a higher DvP ranking means a better matchup for the player.
-            if (player.DvP >= 15) // If the player is up against one of the worst defenses for their position
+            // Check each checkbox and apply the condition if checked
+            if (dVPcheckBox1.Checked && player.DvP >= 15) // If the player is up against one of the worst defenses for their position
             {
                 adjustedPoints *= 1.1; // Increase points by 10% for easy matchups
             }
-            else if (player.DvP <= 14) // If the player is up against one of the best defenses for their position
+            else if (dVPcheckBox1.Checked && player.DvP <= 14) // If the player is up against one of the best defenses for their position
             {
                 adjustedPoints *= 0.9; // Decrease points by 10% for tough matchups
             }
 
-            // Adjust based on Over/Under (O/U)
-            // Let's assume a higher O/U means a higher-scoring game, which is better for fantasy points.
-            if (player.OverUnder > 220) // If it's expected to be a high-scoring game
+            if (OverUndercheckBox2.Checked && player.OverUnder > 220) // If it's expected to be a high-scoring game
             {
                 adjustedPoints *= 1.05; // Increase points by 5%
             }
 
-            // Adjust based on the player's team projected points
-            // Let's assume more team points means more opportunities for the player.
-            if (player.TeamPoints > 110) // If the player's team is expected to score a lot
+            if (totalTeamPointscheckBox3.Checked && player.TeamPoints > 110) // If the player's team is expected to score a lot
             {
                 adjustedPoints *= 1.05; // Increase points by 5%
             }
 
-
-
-            // Additional conditions
-            if (player.Rest < 1) // If REST is less than 1, give a 2% increase
+            if (RestcheckBox4.Checked && player.Rest < 1) // If REST is less than 1
             {
                 adjustedPoints *= 1.02; // Increase points by 2%
             }
 
-            if (player.Start == "EXP") // If START is "EXP", give a 5% increase
+            if (StartcheckBox.Checked && player.Start == "EXP") // If START is "EXP"
             {
                 adjustedPoints *= 1.05; // Increase points by 5%
             }
