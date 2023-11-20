@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Threading.Tasks; // Make sure you have this for async Task
 using System; // For the Exception class
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Diagnostics;
 
 namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
 {
@@ -21,9 +22,9 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            // If you want to load the data when the form loads, call the method here.
-            await DisplayDataInGridView(); 
-
+           // If you want to load the data when the form loads, call the method here.
+             await DisplayDataInGridView();
+         
         }
 
 
@@ -138,14 +139,14 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
             {
                 ListViewItem item = new ListViewItem(string.Join("/", player.Positions));// Position as the first column
                 item.SubItems.Add(player.Name); // Name as the second column
-                item.SubItems.Add($"${player.Salary * 1000:N0}");  // Salary as the third column, formatted as currency
+                item.SubItems.Add($"${player.Salary:N0}");
                 item.SubItems.Add(player.FDProjectedPoints.ToString("N2")); // Fantasy Points as the fourth column
 
                 listViewFinalTeam.Items.Add(item); // Add the player to your ListView
 
                 // Add to totals
                 totalFantasyPoints += player.FDProjectedPoints;
-                totalSalary += (int)(player.Salary * 1000);
+                totalSalary += (int)(player.Salary);
             }
 
             // Add the totals row
@@ -194,6 +195,32 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
         }
 
 
+        // Parse salary string and convert to double
+        private double ParseSalary(string salaryStr)
+        {
+            // Remove dollar sign and trim whitespace
+            salaryStr = salaryStr.Replace("$", "").Trim();
+
+            // Check if the salary ends with 'k'
+            if (salaryStr.EndsWith("k", StringComparison.OrdinalIgnoreCase))
+            {
+                // Remove 'k' and parse the number
+                if (double.TryParse(salaryStr.Substring(0, salaryStr.Length - 1), out double number))
+                {
+                    return number * 1000; // Multiply by 1000 if 'k' is present
+                }
+            }
+            else
+            {
+                // If there's no 'k', just parse the number
+                if (double.TryParse(salaryStr, out double number))
+                {
+                    return number;
+                }
+            }
+
+            return 0; // Return 0 if parsing fails
+        }
 
         private async Task<List<Player>> GetAllPlayerDataAsync()
         {
@@ -211,7 +238,7 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                     {
                         Positions = row["POS"].ToString().Split('/').ToList(),
                         Name = playerName,
-                        Salary = double.TryParse(row["SALARY"].ToString().Replace("$", "").Replace("k", "000"), out double salary) ? salary : 0,
+                        Salary = ParseSalary(row["SALARY"].ToString()),
                         Rest = int.TryParse(row["REST"].ToString(), out int rest) ? rest : 0,
                         Start = row["START"].ToString(),
                         Team = row["TEAM"].ToString(),
@@ -227,6 +254,7 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                     };
 
                     players.Add(player);
+                    Debug.WriteLine($"Parsed Salary for {player.Name}: {player.Salary}");
                 }
             }
 
@@ -243,18 +271,18 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                 if (!string.IsNullOrEmpty(playerNameToExclude))
                 {
                     excludedPlayerNames.Add(playerNameToExclude);
-                  //  textBox2.Clear(); // Optionally clear the TextBox
+                    //  textBox2.Clear(); // Optionally clear the TextBox
                 }
 
                 // Define your position requirements
                 Dictionary<string, int> positionRequirements = new Dictionary<string, int>
-        {
-            {"PG", 2},
-            {"SG", 2},
-            {"PF", 2},
-            {"SF", 2},
-            {"C", 1}
-        };
+            {
+                {"PG", 2},
+                {"SG", 2},
+                {"PF", 2},
+                {"SF", 2},
+                {"C", 1}
+            };
 
                 List<Player> allPlayers = await GetAllPlayerDataAsync();
                 if (allPlayers == null || !allPlayers.Any())
@@ -262,6 +290,7 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                     MessageBox.Show("No players were fetched.");
                     return;
                 }
+
 
                 // Now pass the position requirements dictionary to the method
                 List<Player> optimalTeam = KnapsackOptimizeTeam(allPlayers, 60000, positionRequirements);
@@ -355,7 +384,9 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
             {
                 throw new InvalidOperationException("Unable to form a valid team under the salary cap.");
             }
-
+            Debug.WriteLine($"Initial Total Salary: {finalTeam.Sum(p => p.Salary)}");
+            AdjustTeamForSalaryCap(ref finalTeam, players, salaryCap);
+            Debug.WriteLine($"Final Total Salary: {finalTeam.Sum(p => p.Salary)}");
             return finalTeam;
         }
 
@@ -425,6 +456,65 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
 
             return adjustedPoints;
         }
+        private void AdjustTeamForSalaryCap(ref List<Player> finalTeam, List<Player> allPlayers, double salaryCap)
+        {
+            double totalSalary = finalTeam.Sum(p => p.Salary);
+            Debug.WriteLine($"Adjusting Team. Initial Salary: {totalSalary}");
+            while (totalSalary > salaryCap)
+            {
+                var playerToRemove = finalTeam.OrderBy(p => p.FDProjectedPoints).First();
+                Debug.WriteLine($"Removing Player: {playerToRemove.Name}, Salary: {playerToRemove.Salary}");
+                finalTeam.Remove(playerToRemove);
+                totalSalary -= playerToRemove.Salary;
+
+                var replacement = FindReplacementPlayer(allPlayers, finalTeam, playerToRemove, totalSalary, salaryCap);
+                if (replacement != null)
+                {
+                    Debug.WriteLine($"Adding Replacement: {replacement.Name}, Salary: {replacement.Salary}");
+                    finalTeam.Add(replacement);
+                    totalSalary += replacement.Salary;
+                }
+            }
+
+            while (salaryCap - totalSalary > 700)
+            {
+                var playerToReplace = finalTeam.OrderBy(p => p.Salary).First();
+                var upgrade = FindUpgradePlayer(allPlayers, finalTeam, playerToReplace, totalSalary, salaryCap);
+                if (upgrade != null)
+                {
+                    Debug.WriteLine($"Upgrading Player: {playerToReplace.Name} with {upgrade.Name}, Salary Change: {upgrade.Salary - playerToReplace.Salary}");
+                    finalTeam.Remove(playerToReplace);
+                    finalTeam.Add(upgrade);
+                    totalSalary = finalTeam.Sum(p => p.Salary);
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Debug.WriteLine($"Final Adjusted Salary: {totalSalary}");
+        }
+
+
+
+        private Player FindReplacementPlayer(List<Player> allPlayers, List<Player> currentTeam, Player removedPlayer, double currentSalary, double salaryCap)
+        {
+            return allPlayers.Except(currentTeam)
+                             .Where(p => p.Positions.Contains(removedPlayer.POS) && p.Salary + currentSalary <= salaryCap)
+                             .OrderByDescending(p => p.FDProjectedPoints)
+                             .FirstOrDefault();
+        }
+
+
+        private Player FindUpgradePlayer(List<Player> allPlayers, List<Player> currentTeam, Player playerToReplace, double currentSalary, double salaryCap)
+        {
+            return allPlayers.Except(currentTeam)
+                             .Where(p => p.Positions.Contains(playerToReplace.POS) && p.Salary > playerToReplace.Salary && p.Salary + currentSalary - playerToReplace.Salary <= salaryCap)
+                             .OrderByDescending(p => p.FDProjectedPoints)
+                             .FirstOrDefault();
+        }
+
+
 
         private async void button2_Click(object sender, EventArgs e)
         {
@@ -439,5 +529,5 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
             }
         }
     }
-    }
+}
 
