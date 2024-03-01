@@ -29,56 +29,123 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
 
 
 
-        public async Task<DataTable> GetTableFromWebAsync(string url)
+public async Task<DataTable> GetTableFromWebAsync(string url)
+    {
+        // Initialize the HttpClient
+        using (HttpClient http = new HttpClient())
         {
-            // Initialize the HttpClient
-            using (HttpClient http = new HttpClient())
+            // Make sure the URL is absolute
+            if (!Uri.IsWellFormedUriString(url, UriKind.Absolute))
             {
-                // Make sure the URL is absolute
-                if (!Uri.IsWellFormedUriString(url, UriKind.Absolute))
+                throw new ArgumentException("The URL must be an absolute URI.", nameof(url));
+            }
+
+            // Get the html content from the website
+            var response = await http.GetAsync(url);
+            var pageContents = await response.Content.ReadAsStringAsync();
+
+            // Load the HTML into the HtmlDocument (HtmlAgilityPack.HtmlDocument)
+            HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
+            doc.LoadHtml(pageContents);
+
+            // Initialize the DataTable
+            DataTable dt = new DataTable("NBA");
+
+            // Define column names and their respective data types
+            var columnDefinitions = new Dictionary<string, Type>
+        {
+            {"POS", typeof(string)}, // varchar
+            {"NAME", typeof(string)}, // varchar
+            {"SALARY", typeof(decimal)}, // money
+            {"REST", typeof(int)}, // int
+            {"START", typeof(string)}, // varchar
+            {"TEAM", typeof(string)}, // varchar
+            {"OPP", typeof(string)}, // varchar
+            {"DvP", typeof(int)}, // int
+            {"FD FP PROJECTED", typeof(decimal)}, // int
+            {"VALUE PROJECTED", typeof(decimal)}, // int
+            {"FP MIN", typeof(decimal)}, // int
+            {"FP AVG", typeof(decimal)}, // int
+            {"FP MAX", typeof(decimal)}, // int
+            {"O/U", typeof(decimal)}, // int
+            {"TM PTS", typeof(decimal)} // int
+        };
+
+                // Add columns with specific data types
+                foreach (var columnDefinition in columnDefinitions)
                 {
-                    throw new ArgumentException("The URL must be an absolute URI.", nameof(url));
+                    dt.Columns.Add(columnDefinition.Key, columnDefinition.Value);
                 }
-
-                // Get the html content from the website
-                var response = await http.GetAsync(url);
-                var pageContents = await response.Content.ReadAsStringAsync();
-
-                // Load the HTML into the HtmlDocument (specify HtmlAgilityPack.HtmlDocument)
-                HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
-                doc.LoadHtml(pageContents);
-
-                // Initialize the DataTable
-                DataTable dt = new DataTable("NBA");
 
                 // Locate the table you want by an identifier if possible, otherwise assume first table
                 var table = doc.DocumentNode.SelectSingleNode("//table");
 
-                // Check if the table is not null
-                if (table != null)
-                {
-                    // Process table headers
-                    var headers = table.SelectNodes("thead/tr/th").Skip(5).Select(th => th.InnerText.Trim());
-                    foreach (var header in headers)
-                    {
-                        dt.Columns.Add(header); // Create columns according to headers, skipping the first 5
-                    }
+            // Check if the table is not null
+            if (table != null)
+            {
+            
 
                     // Process rows, skip the first row
                     var rows = table.SelectNodes("tbody/tr").Skip(1);
                     foreach (var row in rows)
                     {
-                        // Select cells from each row, skipping the first cell
-                        var cells = row.SelectNodes("td").Skip(1).Select(td => td.InnerText.Trim()).ToArray();
-                        dt.Rows.Add(cells); // Add row data to DataTable
+                        var cells = row.SelectNodes("td").Skip(1).Select(td => td.InnerText.Trim()).ToList();
+                        var rowValues = new object[cells.Count];
+
+                        for (int i = 0; i < cells.Count; i++)
+                        {
+                            var columnType = dt.Columns[i].DataType;
+                            var cellValue = cells[i];
+
+                            // Convert cell value to appropriate type
+                            if (columnType == typeof(int))
+                            {
+                                rowValues[i] = ParseToInt(cellValue);
+                            }
+                            else if (columnType == typeof(decimal))
+                            {
+                                rowValues[i] = ParseToDecimal(cellValue);
+                            }
+                            else
+                            {
+                                rowValues[i] = cellValue; // Use the string value for non-numeric types
+                            }
+                        }
+
+                        dt.Rows.Add(rowValues); // Add row data to DataTable
                     }
                 }
 
                 return dt;
             }
-
-
         }
+
+        private int ParseToInt(string value)
+        {
+            // Remove non-numeric characters, convert shorthand notation as needed
+            value = value.Replace("$", "").Replace("k", "000");
+            if (int.TryParse(value, out int result))
+            {
+                return result;
+            }
+            return 0; // Default to 0 if parsing fails
+        }
+
+        private decimal ParseToDecimal(string value)
+        {
+            // Handle decimal values correctly
+            value = value.Replace("$", "").Replace("k", "00").Replace(",", "");
+
+            // Attempt to parse the value directly as a decimal
+            if (decimal.TryParse(value, out decimal result))
+            {
+                return result; // Return parsed value directly
+            }
+
+            return 0M; // Default to 0 if parsing fails
+        }
+
+
         private async Task DisplayDataInGridView(string url = "https://www.dailyfantasyfuel.com/nba/projections/fanduel")
         {
             try
@@ -120,50 +187,42 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
         // Assuming this is somewhere in your form code
         private void DisplayFinalTeam(List<Player> finalTeam)
         {
-            // Clear existing items if you have a control to display the team
             listViewFinalTeam.Items.Clear();
-
-            // Ensure the ListView has the correct columns
             listViewFinalTeam.Columns.Clear();
             listViewFinalTeam.Columns.Add("Position", -2, HorizontalAlignment.Left);
             listViewFinalTeam.Columns.Add("Name", -2, HorizontalAlignment.Left);
             listViewFinalTeam.Columns.Add("Salary", -2, HorizontalAlignment.Right);
             listViewFinalTeam.Columns.Add("Fantasy Points", -2, HorizontalAlignment.Right);
 
-
-            // Variables to keep track of totals
             double totalFantasyPoints = 0;
-            int totalSalary = 0;
+            double totalSalary = 0;
 
             foreach (var player in finalTeam)
             {
-                ListViewItem item = new ListViewItem(string.Join("/", player.Positions));// Position as the first column
-                item.SubItems.Add(player.Name); // Name as the second column
-                item.SubItems.Add($"${player.Salary:N0}");
-                item.SubItems.Add(player.FDProjectedPoints.ToString("N2")); // Fantasy Points as the fourth column
+                ListViewItem item = new ListViewItem(string.Join("/", player.Positions));
+                item.SubItems.Add(player.Name);
 
-                listViewFinalTeam.Items.Add(item); // Add the player to your ListView
+                // Assuming salary is stored as '9.9' for $9,900, multiply by 1,000 for correct conversion
+                double actualSalary = player.Salary * 1000;
+                item.SubItems.Add($"{actualSalary:C0}"); // Format as currency
 
-                // Add to totals
+                item.SubItems.Add(player.FDProjectedPoints.ToString("N2"));
+
+                listViewFinalTeam.Items.Add(item);
+
                 totalFantasyPoints += player.FDProjectedPoints;
-                totalSalary += (int)(player.Salary);
+                totalSalary += actualSalary; // Add the correctly converted salary
             }
 
-            // Add the totals row
             ListViewItem totalsItem = new ListViewItem("Total");
-            totalsItem.SubItems.Add(""); // Blank for the Name column
-            totalsItem.SubItems.Add($"${totalSalary}"); // Total Salary formatted as currency
-            totalsItem.SubItems.Add(totalFantasyPoints.ToString("N2")); // Total Fantasy Points
+            totalsItem.SubItems.Add("");
+            totalsItem.SubItems.Add($"{totalSalary:C0}");
+            totalsItem.SubItems.Add(totalFantasyPoints.ToString("N2"));
 
-            listViewFinalTeam.Items.Add(totalsItem); // Add the totals to your ListView
+            listViewFinalTeam.Items.Add(totalsItem);
 
-            // Now that all items are added, resize the columns.
             ResizeListViewColumns();
-
-            // Refresh the ListView to show the new items
             listViewFinalTeam.Refresh();
-
-
         }
 
         private void ResizeListViewColumns()
@@ -254,7 +313,7 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                     };
 
                     players.Add(player);
-                    Debug.WriteLine($"Parsed Salary for {player.Name}: {player.Salary}");
+                  //  Debug.WriteLine($"Parsed Salary for {player.Name}: {player.Salary}");
                 }
             }
 
@@ -267,33 +326,30 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
             try
             {
                 // Read the player name from the TextBox and add to the exclusion list
-                string playerNameToExclude = textBox2.Text.Trim(); // Assuming 'txtPlayerName' is your TextBox
+                string playerNameToExclude = textBox2.Text.Trim();
                 if (!string.IsNullOrEmpty(playerNameToExclude))
                 {
                     excludedPlayerNames.Add(playerNameToExclude);
-                    //  textBox2.Clear(); // Optionally clear the TextBox
                 }
 
                 // Define your position requirements
                 Dictionary<string, int> positionRequirements = new Dictionary<string, int>
-            {
-                {"PG", 2},
-                {"SG", 2},
-                {"PF", 2},
-                {"SF", 2},
-                {"C", 1}
-            };
+        {
+            {"PG", 2},
+            {"SG", 2},
+            {"PF", 2},
+            {"SF", 2},
+            {"C", 1}
+        };
 
+                // Retrieve all player data
                 List<Player> allPlayers = await GetAllPlayerDataAsync();
-                if (allPlayers == null || !allPlayers.Any())
-                {
-                    MessageBox.Show("No players were fetched.");
-                    return;
-                }
 
+                // Exclude players if needed
+                allPlayers = allPlayers.Where(player => !excludedPlayerNames.Contains(player.Name)).ToList();
 
-                // Now pass the position requirements dictionary to the method
-                List<Player> optimalTeam = KnapsackOptimizeTeam(allPlayers, 60000, positionRequirements);
+                // Optimize the team
+                List<Player> optimalTeam = OptimizeTeam(allPlayers, 60000, positionRequirements);
 
                 if (optimalTeam == null || !optimalTeam.Any())
                 {
@@ -301,6 +357,7 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                     return;
                 }
 
+                // Display the final team
                 DisplayFinalTeam(optimalTeam);
             }
             catch (Exception ex)
@@ -311,83 +368,87 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
 
         public const int TotalPlayersToSelect = 9;
 
-        public List<Player> KnapsackOptimizeTeam(List<Player> players, double salaryCap, Dictionary<string, int> positionRequirements)
+        public List<Player> OptimizeTeam(List<Player> allPlayers, double salaryCap, Dictionary<string, int> positionRequirements)
         {
-            // Initialize lists to hold position-specific optimal players and a set to track selected player names
-            Dictionary<string, List<Player>> positionPlayers = new Dictionary<string, List<Player>>();
-            HashSet<string> selectedPlayerNames = new HashSet<string>();
 
-            foreach (var position in positionRequirements.Keys)
+            // Sort players by their point/salary ratio
+            allPlayers = allPlayers.OrderByDescending(p => p.FDProjectedPoints / p.Salary).ToList();
+
+            // Initialize the team structure based on position requirements
+            var team = new Dictionary<string, List<Player>>();
+            foreach (var pos in positionRequirements.Keys)
             {
-                positionPlayers[position] = new List<Player>();
+                team[pos] = new List<Player>();
             }
 
-            // Now, we should consider each player for all positions they are eligible for
-            foreach (var player in players)
+            // Attempt to fill the team with initial picks
+            foreach (var player in allPlayers)
             {
-                foreach (var position in player.Positions)
+                foreach (var pos in player.Positions)
                 {
-                    if (positionRequirements.ContainsKey(position))
+                    if (team.ContainsKey(pos) && team[pos].Count < positionRequirements[pos])
                     {
-                        positionPlayers[position].Add(player);
+                        team[pos].Add(player);
+                        break; // Stop looking for positions to fill for this player
                     }
                 }
             }
 
-            // Combine all position players into one list while ensuring we respect the position constraints
-            List<Player> finalTeam = new List<Player>();
-            double totalSalary = 0; // Track the total salary of the selected team
-
-            foreach (var position in positionRequirements.Keys)
+            // Function to calculate the total salary of the team
+            double CalculateTotalSalary(Dictionary<string, List<Player>> team)
             {
-                List<Player> eligiblePlayers = positionPlayers[position]
-                    .Where(p => !selectedPlayerNames.Contains(p.Name)) // Filter out already selected players
-                    .OrderByDescending(p => AdjustedProjectedPoints(p) / p.Salary)
-                    .ToList();
+                return team.SelectMany(kvp => kvp.Value).Sum(p => p.Salary);
+            }
 
-                List<Player> selectedForPosition = KnapsackForPosition(eligiblePlayers, salaryCap - totalSalary, positionRequirements[position]);
+            // Function to calculate the total points of the team
+            double CalculateTotalPoints(Dictionary<string, List<Player>> team)
+            {
+                return team.SelectMany(kvp => kvp.Value).Sum(p => p.FDProjectedPoints);
+            }
 
-                // Add the selected players to the final team and mark them as selected
-                foreach (var player in selectedForPosition)
+            // Now let's try to improve the team by looking for potential player swaps
+            bool improved;
+            do
+            {
+                improved = false;
+                foreach (var pos in positionRequirements.Keys)
                 {
-                    finalTeam.Add(player);
-                    selectedPlayerNames.Add(player.Name); // Keep track of selected players by name
-                    totalSalary += player.Salary; // Update the total salary
-                }
-            }
-
-            // Check if the total salary exceeds the cap
-            if (totalSalary > salaryCap)
-            {
-                // Handle the situation by removing the highest-priced players until the team fits within the cap
-                while (totalSalary > salaryCap)
-                {
-                    // Identify the player with the highest salary
-                    Player playerToRemove = finalTeam.OrderByDescending(p => p.Salary).FirstOrDefault();
-
-                    if (playerToRemove != null)
+                    foreach (var playerToReplace in team[pos])
                     {
-                        finalTeam.Remove(playerToRemove);
-                        selectedPlayerNames.Remove(playerToRemove.Name); // Remove from the selected player names
-                        totalSalary -= playerToRemove.Salary; // Subtract the removed player's salary from the total
-                    }
-                    else
-                    {
-                        // If no player can be removed without going below the cap, break out of the loop
-                        break;
-                    }
-                }
-            }
+                        var potentialReplacements = allPlayers.Except(team.SelectMany(kvp => kvp.Value))
+                            .Where(p => p.Positions.Contains(pos) && p.Salary <= playerToReplace.Salary)
+                            .OrderByDescending(p => p.FDProjectedPoints);
 
-            // Final check to make sure we are within the salary cap
-            if (totalSalary > salaryCap)
-            {
-                throw new InvalidOperationException("Unable to form a valid team under the salary cap.");
-            }
-            Debug.WriteLine($"Initial Total Salary: {finalTeam.Sum(p => p.Salary)}");
-            AdjustTeamForSalaryCap(ref finalTeam, players, salaryCap);
-            Debug.WriteLine($"Final Total Salary: {finalTeam.Sum(p => p.Salary)}");
+                        foreach (var replacement in potentialReplacements)
+                        {
+                            double currentSalary = CalculateTotalSalary(team);
+                            double currentPoints = CalculateTotalPoints(team);
+
+                            // Calculate new potential salary and points
+                            double newSalary = currentSalary - playerToReplace.Salary + replacement.Salary;
+                            double newPoints = currentPoints - playerToReplace.FDProjectedPoints + replacement.FDProjectedPoints;
+
+                            if (newSalary <= salaryCap && newPoints > currentPoints)
+                            {
+                                // Perform the swap
+                                team[pos].Remove(playerToReplace);
+                                team[pos].Add(replacement);
+                                improved = true;
+                                break; // Only do one improvement at a time
+                            }
+                        }
+                        if (improved) break; // Exit early if an improvement was made
+                    }
+                    if (improved) break; // Exit early if an improvement was made
+                }
+            } while (improved); // Keep trying to improve until no more improvements can be made
+
+            // Flatten the team dictionary into a list
+            List<Player> finalTeam = team.SelectMany(kvp => kvp.Value).Distinct().ToList();
+
+            // Return the final team
             return finalTeam;
+
         }
 
 
@@ -459,18 +520,18 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
         private void AdjustTeamForSalaryCap(ref List<Player> finalTeam, List<Player> allPlayers, double salaryCap)
         {
             double totalSalary = finalTeam.Sum(p => p.Salary);
-            Debug.WriteLine($"Adjusting Team. Initial Salary: {totalSalary}");
+          //  Debug.WriteLine($"Adjusting Team. Initial Salary: {totalSalary}");
             while (totalSalary > salaryCap)
             {
                 var playerToRemove = finalTeam.OrderBy(p => p.FDProjectedPoints).First();
-                Debug.WriteLine($"Removing Player: {playerToRemove.Name}, Salary: {playerToRemove.Salary}");
+              //  Debug.WriteLine($"Removing Player: {playerToRemove.Name}, Salary: {playerToRemove.Salary}");
                 finalTeam.Remove(playerToRemove);
                 totalSalary -= playerToRemove.Salary;
 
                 var replacement = FindReplacementPlayer(allPlayers, finalTeam, playerToRemove, totalSalary, salaryCap);
                 if (replacement != null)
                 {
-                    Debug.WriteLine($"Adding Replacement: {replacement.Name}, Salary: {replacement.Salary}");
+                //    Debug.WriteLine($"Adding Replacement: {replacement.Name}, Salary: {replacement.Salary}");
                     finalTeam.Add(replacement);
                     totalSalary += replacement.Salary;
                 }
@@ -492,7 +553,7 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                     break;
                 }
             }
-            Debug.WriteLine($"Final Adjusted Salary: {totalSalary}");
+          //  Debug.WriteLine($"Final Adjusted Salary: {totalSalary}");
         }
 
 
