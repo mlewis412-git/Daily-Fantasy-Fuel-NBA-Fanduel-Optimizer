@@ -1,0 +1,3677 @@
+[
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "V. Wembanyama",
+    "salary": 11900,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 59.8
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "G. Antetokounmpo Q",
+    "salary": 12000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 4,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 53.6
+  },
+  {
+    "positions": [
+      "C/PF"
+    ],
+    "NAME": "D. Sabonis",
+    "salary": 10600,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 53.3
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Joel Embiid Q",
+    "salary": 11000,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 30,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 52.9
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Shai Gilgeous-Alexander",
+    "salary": 10600,
+    "rest": 8,
+    "start": "EXP.",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 47.1
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "J. Brunson",
+    "salary": 9700,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 4,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 47.1
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "A. Edwards",
+    "salary": 9500,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 24,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 46.7
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "T. Haliburton",
+    "salary": 9600,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 13,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 45.4
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "De&#x27;Aaron Fox",
+    "salary": 9800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 12,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 45.2
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "D. Murray",
+    "salary": 9900,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 14,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 43.6
+  },
+  {
+    "positions": [
+      "SF/SF"
+    ],
+    "NAME": "J. Tatum",
+    "salary": 10200,
+    "rest": 3,
+    "start": "EXP.",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 12,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 43.4
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Bam Adebayo Q",
+    "salary": 8700,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 25,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 42.7
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "K. Irving",
+    "salary": 9300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 21,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 41.5
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Rudy Gobert",
+    "salary": 8200,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 29,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 41.3
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "P. Siakam",
+    "salary": 8000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 30,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 41.2
+  },
+  {
+    "positions": [
+      "PF/SF"
+    ],
+    "NAME": "P. Banchero",
+    "salary": 8900,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 12,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 41.2
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "T. Maxey Q",
+    "salary": 9400,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 17,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 41
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "D. Lillard",
+    "salary": 9000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 15,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 40.7
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "M. Bridges",
+    "salary": 8100,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 23,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 40.6
+  },
+  {
+    "positions": [
+      "C/PF"
+    ],
+    "NAME": "K. Olynyk",
+    "salary": 7200,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 3,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 39.6
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Cade Cunningham Q",
+    "salary": 8700,
+    "rest": 7,
+    "start": "EXP.",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 39.6
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "J. Butler",
+    "salary": 8300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 21,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 39.2
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "RJ Barrett",
+    "salary": 8000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 24,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 39
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "D. DeRozan",
+    "salary": 8800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 18,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 38.5
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "J. Green",
+    "salary": 8600,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 9,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 37.9
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "J. Johnson",
+    "salary": 7600,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 13,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 37.6
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "Naz Reid",
+    "salary": 7300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 19,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 37.5
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "J. Poole",
+    "salary": 7300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 1,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 36.7
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Fred VanVleet",
+    "salary": 8300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 9,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 35.9
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "Kyle Kuzma Q",
+    "salary": 8500,
+    "rest": 5,
+    "start": "EXP.",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 2,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 35.7
+  },
+  {
+    "positions": [
+      "SF/SF"
+    ],
+    "NAME": "GG Jackson",
+    "salary": 6100,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 5,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 35.3
+  },
+  {
+    "positions": [
+      "SG/SG"
+    ],
+    "NAME": "J. Brown",
+    "salary": 8400,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 7,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 35.2
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "Deni Avdija",
+    "salary": 7900,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 6,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 34.5
+  },
+  {
+    "positions": [
+      "PF/SG"
+    ],
+    "NAME": "J. Williams Q",
+    "salary": 8200,
+    "rest": 8,
+    "start": "EXP.",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 25,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 34.3
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "N. Vucevic",
+    "salary": 8000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 2,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 34.1
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "M. Turner",
+    "salary": 6800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 20,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 33.8
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "Josh Giddey",
+    "salary": 7800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 33.7
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "Josh Hart",
+    "salary": 7000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 15,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 33.5
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Chet Holmgren",
+    "salary": 7600,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 33.4
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "S. Pippen",
+    "salary": 5300,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 33.3
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "J. Goodwin",
+    "salary": 5900,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 33.2
+  },
+  {
+    "positions": [
+      "SF/SF"
+    ],
+    "NAME": "K. Middleton Q",
+    "salary": 7400,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 3,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 33
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Gary Trent",
+    "salary": 6500,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 32.9
+  },
+  {
+    "positions": [
+      "PF/C"
+    ],
+    "NAME": "K. Porzingis Q",
+    "salary": 9000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 1,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 32.8
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "D. DiVincenzo",
+    "salary": 7800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 25,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 32.8
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "T. Herro",
+    "salary": 7000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 23,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 32.8
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "B. Miller",
+    "salary": 7100,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 23,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 32.3
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "K. Murray Q",
+    "salary": 6600,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 30,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 32.1
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Tre Jones",
+    "salary": 6300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 31.8
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "J. Duren",
+    "salary": 7000,
+    "rest": 3,
+    "start": "EXP.",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 31.4
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "F. Wagner Q",
+    "salary": 6800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 20,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 31.3
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "C. Capela",
+    "salary": 7500,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 1,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 31
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Coby White Q",
+    "salary": 6900,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 3,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 31
+  },
+  {
+    "positions": [
+      "SG/SG"
+    ],
+    "NAME": "B. Bogdanovic",
+    "salary": 6900,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 6,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 30.5
+  },
+  {
+    "positions": [
+      "SG/SG"
+    ],
+    "NAME": "K. Oubre",
+    "salary": 7300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 20,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 30.4
+  },
+  {
+    "positions": [
+      "SF/SF"
+    ],
+    "NAME": "T. Harris Q",
+    "salary": 7700,
+    "rest": 6,
+    "start": "EXP.",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 26,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 30.2
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "G. Williams",
+    "salary": 6000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 8,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 29.7
+  },
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "B. Clarke",
+    "salary": 5800,
+    "rest": 2,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 28,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 29.7
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "D. Gafford",
+    "salary": 6400,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 17,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 29.2
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "S. Mamukelashvili",
+    "salary": 5000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 29.1
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "Jaden Ivey",
+    "salary": 6700,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 28.9
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "Amen Thompson",
+    "salary": 7900,
+    "rest": 1,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 9,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 28.8
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "T. Rozier Q",
+    "salary": 7500,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 23,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 28.7
+  },
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "I. Hartenstein",
+    "salary": 6500,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 12,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 28.7
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "W. Carter",
+    "salary": 6600,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 19,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 28.7
+  },
+  {
+    "positions": [
+      "PF/C"
+    ],
+    "NAME": "P.J. Washington",
+    "salary": 6900,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 18,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 28.4
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "J. Smith",
+    "salary": 7100,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 3,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 27.3
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Mike Conley",
+    "salary": 6500,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 30,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 27.2
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "D. White",
+    "salary": 7700,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 26,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 27.2
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "V. Micic",
+    "salary": 6000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 18,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 27
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "Chimezie Metu",
+    "salary": 5700,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 23,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 26.4
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "T.J. McConnell",
+    "salary": 5800,
+    "rest": 1,
+    "start": "",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 13,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 26.3
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Tre Mann",
+    "salary": 5800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 18,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 26.2
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "Ayo Dosunmu Q",
+    "salary": 6200,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 3,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 26
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "J. Champagnie",
+    "salary": 5400,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 14,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 26
+  },
+  {
+    "positions": [
+      "PF/C"
+    ],
+    "NAME": "B. Portis",
+    "salary": 6700,
+    "rest": 1,
+    "start": "",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 4,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 25.9
+  },
+  {
+    "positions": [
+      "SG/PF"
+    ],
+    "NAME": "A. Nesmith",
+    "salary": 5200,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 26,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 25.9
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "A. Drummond",
+    "salary": 6200,
+    "rest": 1,
+    "start": "",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 2,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 25.5
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "D. Hunter",
+    "salary": 6000,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 25,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 25.5
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Z. Simpson",
+    "salary": 3900,
+    "rest": 2,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 25.4
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Jrue Holiday",
+    "salary": 6800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 26,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 25.1
+  },
+  {
+    "positions": [
+      "SF/SG"
+    ],
+    "NAME": "OG Anunoby",
+    "salary": 5800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 15,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 25.1
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "D. Graham",
+    "salary": 3700,
+    "rest": 1,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 25
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "C. Kispert",
+    "salary": 5900,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 2,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 24.7
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "B. Brown",
+    "salary": 5500,
+    "rest": 1,
+    "start": "",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 24.6
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "M. Branham",
+    "salary": 4700,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 24.5
+  },
+  {
+    "positions": [
+      "SG/SG"
+    ],
+    "NAME": "Alex Caruso Q",
+    "salary": 6100,
+    "rest": 3,
+    "start": "EXP.",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 24.3
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "J. Suggs",
+    "salary": 5700,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 6,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 24.3
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "C. Martin",
+    "salary": 5100,
+    "rest": 1,
+    "start": "",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 29,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 24.2
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Nick Richards",
+    "salary": 5500,
+    "rest": 1,
+    "start": "",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 6,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 24
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "J. Freeman-Liberty",
+    "salary": 4800,
+    "rest": 1,
+    "start": "",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 24
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "B. Lopez",
+    "salary": 6000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 8,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 23.1
+  },
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "Zach Collins",
+    "salary": 6300,
+    "rest": 1,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 22.1
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "J. McDaniels",
+    "salary": 5300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 28,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 22.1
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "Trey Lyles",
+    "salary": 5300,
+    "rest": 1,
+    "start": "",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 30,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 21.9
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "O. Agbaji",
+    "salary": 4600,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 19,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 21.3
+  },
+  {
+    "positions": [
+      "SF/SF"
+    ],
+    "NAME": "Kyle Anderson",
+    "salary": 5600,
+    "rest": 1,
+    "start": "",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 28,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 20.7
+  },
+  {
+    "positions": [
+      "SF/SG"
+    ],
+    "NAME": "Luguentz Dort",
+    "salary": 4800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 20.5
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "J. Wiseman",
+    "salary": 5100,
+    "rest": 2,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 20.4
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "J. Green",
+    "salary": 4800,
+    "rest": 1,
+    "start": "",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 18,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 20.3
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "P. Pritchard",
+    "salary": 5500,
+    "rest": 1,
+    "start": "",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 26,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 20.3
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Cam Whitmore",
+    "salary": 5100,
+    "rest": 1,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 3,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 20.2
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "Gradey Dick Q",
+    "salary": 5400,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 20.2
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "Al Horford Q",
+    "salary": 5600,
+    "rest": 1,
+    "start": "",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 1,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 20
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "J. Smith",
+    "salary": 5200,
+    "rest": 1,
+    "start": "",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 20,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 19.5
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "Dante Exum",
+    "salary": 4100,
+    "rest": 1,
+    "start": "",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 21,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 19.3
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "A. Nembhard",
+    "salary": 5100,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 13,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 19.3
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Kyle Lowry Q",
+    "salary": 5600,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 17,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 19.1
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Keon Ellis",
+    "salary": 5000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 12,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 18.9
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "M. Sasser",
+    "salary": 5200,
+    "rest": 2,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 18.9
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "N. Alexander-Walker",
+    "salary": 4700,
+    "rest": 1,
+    "start": "",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 24,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 18.7
+  },
+  {
+    "positions": [
+      "PF/SF"
+    ],
+    "NAME": "D. Brooks",
+    "salary": 4300,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 3,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 18.4
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "D. Mitchell",
+    "salary": 4700,
+    "rest": 1,
+    "start": "",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 12,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 18.1
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "J. Isaac Q",
+    "salary": 4900,
+    "rest": 1,
+    "start": "",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 12,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 18
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "R. Holmes Q",
+    "salary": 5300,
+    "rest": 12,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 15,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 17.6
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "M. Fultz",
+    "salary": 4500,
+    "rest": 1,
+    "start": "",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 6,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 17.6
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "N. Jovic Q",
+    "salary": 5000,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 29,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 17.6
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "G. Temple",
+    "salary": 3800,
+    "rest": 1,
+    "start": "",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 19,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 17.4
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "D. Bertans",
+    "salary": 4400,
+    "rest": 1,
+    "start": "",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 23,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 17.4
+  },
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "B. Fernando",
+    "salary": 5200,
+    "rest": 2,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 1,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 17.4
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "Obi Toppin",
+    "salary": 4800,
+    "rest": 1,
+    "start": "",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 20,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 17.4
+  },
+  {
+    "positions": [
+      "PF/C"
+    ],
+    "NAME": "A. Pokusevski",
+    "salary": 4400,
+    "rest": 1,
+    "start": "",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 8,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 17.4
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "H. Barnes",
+    "salary": 5100,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 17.3
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "Tim Hardaway",
+    "salary": 5000,
+    "rest": 1,
+    "start": "",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 19,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 17.2
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Sam Hauser",
+    "salary": 5300,
+    "rest": 1,
+    "start": "",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 7,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 17.2
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "Troy Brown",
+    "salary": 3900,
+    "rest": 2,
+    "start": "EXP.",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 8,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 16.8
+  },
+  {
+    "positions": [
+      "SG/SG"
+    ],
+    "NAME": "M. Beasley",
+    "salary": 5200,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 2,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 16.6
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Paul Reed",
+    "salary": 5400,
+    "rest": 1,
+    "start": "",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 30,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 16.6
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "Cole Anthony",
+    "salary": 5500,
+    "rest": 1,
+    "start": "",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 6,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 16.5
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "A. Wiggins",
+    "salary": 4200,
+    "rest": 1,
+    "start": "",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 16.4
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Gary Harris",
+    "salary": 4100,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 22,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 16.2
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "H. Highsmith",
+    "salary": 5300,
+    "rest": 1,
+    "start": "",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 21,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 16.2
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "D. Jones",
+    "salary": 3800,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 14,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 15.9
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Jock Landale",
+    "salary": 4600,
+    "rest": 1,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 14,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 15.9
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "M. Morris",
+    "salary": 4300,
+    "rest": 1,
+    "start": "",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 30,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 15.7
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "M. Robinson",
+    "salary": 4900,
+    "rest": 1,
+    "start": "",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 12,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 15.5
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "N. Batum",
+    "salary": 4600,
+    "rest": 1,
+    "start": "",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 26,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 15.2
+  },
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "Kevin Love Q",
+    "salary": 4700,
+    "rest": 1,
+    "start": "",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 25,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 14.9
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "M. McBride",
+    "salary": 6600,
+    "rest": 1,
+    "start": "",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 4,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 14.7
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "M. Flynn",
+    "salary": 5400,
+    "rest": 2,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 14.6
+  },
+  {
+    "positions": [
+      "PF/C"
+    ],
+    "NAME": "Maxi Kleber Q",
+    "salary": 3900,
+    "rest": 1,
+    "start": "",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 18,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 14.3
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Pat Connaughton",
+    "salary": 4800,
+    "rest": 1,
+    "start": "",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 2,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 14
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Isaiah Joe",
+    "salary": 4700,
+    "rest": 1,
+    "start": "",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 18,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 13.9
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Luke Kornet",
+    "salary": 4500,
+    "rest": 1,
+    "start": "",
+    "team": "BOS",
+    "opp": "MIL",
+    "dvp": 23,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 13.7
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "K. Williams",
+    "salary": 4200,
+    "rest": 1,
+    "start": "",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 25,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 13.7
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "B. Wesley",
+    "salary": 3900,
+    "rest": 1,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 13.6
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "Anthony Gill Q",
+    "salary": 4000,
+    "rest": 3,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 2,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 13.5
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "M. Wagner",
+    "salary": 4400,
+    "rest": 1,
+    "start": "",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 12,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 13.4
+  },
+  {
+    "positions": [
+      "SF/PF"
+    ],
+    "NAME": "B. Bogdanovic Q",
+    "salary": 4100,
+    "rest": 1,
+    "start": "",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 15,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 13.1
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "B. Hield",
+    "salary": 4400,
+    "rest": 1,
+    "start": "",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 20,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 13.1
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "J. Butler",
+    "salary": 4900,
+    "rest": 1,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 1,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 12.8
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "C. Wallace",
+    "salary": 4500,
+    "rest": 1,
+    "start": "",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 12.8
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "Joe Ingles",
+    "salary": 3800,
+    "rest": 1,
+    "start": "",
+    "team": "ORL",
+    "opp": "HOU",
+    "dvp": 20,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 12.7
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "J. McLaughlin",
+    "salary": 3900,
+    "rest": 1,
+    "start": "",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 30,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 12.5
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Kobe Bufkin",
+    "salary": 3900,
+    "rest": 2,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 14,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 12.5
+  },
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "J. Williams",
+    "salary": 4200,
+    "rest": 1,
+    "start": "",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 12.4
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Ben Sheppard",
+    "salary": 3800,
+    "rest": 1,
+    "start": "",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 13,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 12.4
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "C. Jones",
+    "salary": 3500,
+    "rest": 1,
+    "start": "",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 12.4
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "J. Jaquez",
+    "salary": 4600,
+    "rest": 1,
+    "start": "",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 21,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 12.3
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "Jeff Green",
+    "salary": 3700,
+    "rest": 1,
+    "start": "EXP.",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 3,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 11.8
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "P. Beverley Q",
+    "salary": 5300,
+    "rest": 6,
+    "start": "",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 15,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 11.3
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "D. Melton Q",
+    "salary": 4100,
+    "rest": 41,
+    "start": "",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 17,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 11.3
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "G. Mathews",
+    "salary": 3900,
+    "rest": 2,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 6,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 11.2
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Alex Len",
+    "salary": 4000,
+    "rest": 1,
+    "start": "",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 10.5
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "J. Champagnie",
+    "salary": 4100,
+    "rest": 1,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 5,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 10.5
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Evan Fournier Q",
+    "salary": 4000,
+    "rest": 3,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 11,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 10.4
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Vit Krejci",
+    "salary": 4500,
+    "rest": 2,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 14,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 9.6
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "T. Craig",
+    "salary": 3700,
+    "rest": 1,
+    "start": "",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 9.3
+  },
+  {
+    "positions": [
+      "SF/SF"
+    ],
+    "NAME": "Jae Crowder",
+    "salary": 3900,
+    "rest": 1,
+    "start": "",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 3,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 8.9
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "A. Holiday",
+    "salary": 4200,
+    "rest": 1,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 9,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 8.7
+  },
+  {
+    "positions": [
+      "PF/C"
+    ],
+    "NAME": "P. Achiuwa",
+    "salary": 5100,
+    "rest": 1,
+    "start": "",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 7.9
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Sidy Cissoko",
+    "salary": 3500,
+    "rest": 3,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 14,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 5.8
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "KJ Martin",
+    "salary": 3900,
+    "rest": 1,
+    "start": "",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 26,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 5.7
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "E. Omoruyi",
+    "salary": 3700,
+    "rest": 1,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 2,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 5.6
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "J. Nowell",
+    "salary": 3800,
+    "rest": 2,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 5.4
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "S. Vezenkov",
+    "salary": 3700,
+    "rest": 1,
+    "start": "",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 7,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 4.7
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "D. Terry",
+    "salary": 3700,
+    "rest": 1,
+    "start": "",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 4.6
+  },
+  {
+    "positions": [
+      "C/PF"
+    ],
+    "NAME": "I. Jackson",
+    "salary": 4500,
+    "rest": 3,
+    "start": "",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 20,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 3.5
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "P. Baldwin",
+    "salary": 3700,
+    "rest": 1,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 2,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 3.4
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "R. Bullock",
+    "salary": 3500,
+    "rest": 1,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 3,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 2.9
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "J. McDaniels",
+    "salary": 3900,
+    "rest": 1,
+    "start": "",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 24,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 2.3
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "J. Hardy",
+    "salary": 3800,
+    "rest": 1,
+    "start": "",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 21,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 2.1
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "J. Davis Q",
+    "salary": 3700,
+    "rest": 1,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 5,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 2
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "Doug McDermott",
+    "salary": 3600,
+    "rest": 3,
+    "start": "",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 30,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 1.5
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "C. Payne",
+    "salary": 5100,
+    "rest": 1,
+    "start": "",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 17,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 1.5
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Derrick Rose O",
+    "salary": 3500,
+    "rest": 40,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF/SG"
+    ],
+    "NAME": "G. Hayward O",
+    "salary": 3800,
+    "rest": 3,
+    "start": "",
+    "team": "OKC",
+    "opp": "SAC",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Seth Curry O",
+    "salary": 3500,
+    "rest": 38,
+    "start": "",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 18,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Josh Richardson O",
+    "salary": 3500,
+    "rest": 57,
+    "start": "",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 23,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "R. Covington O",
+    "salary": 3900,
+    "rest": 100,
+    "start": "",
+    "team": "PHI",
+    "opp": "DET",
+    "dvp": 26,
+    "OverUnder": 0,
+    "TeamPoints": 119,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "S. Adams O",
+    "salary": 3500,
+    "rest": 442,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 14,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "M. Smart O",
+    "salary": 3500,
+    "rest": 90,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Zach LaVine O",
+    "salary": 3500,
+    "rest": 81,
+    "start": "",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "J. Randle O",
+    "salary": 3500,
+    "rest": 72,
+    "start": "",
+    "team": "NY",
+    "opp": "CHI",
+    "dvp": 12,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Tyus Jones O",
+    "salary": 6400,
+    "rest": 25,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 1,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "J. Poeltl O",
+    "salary": 3500,
+    "rest": 36,
+    "start": "",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 3,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF/C"
+    ],
+    "NAME": "K. Towns O",
+    "salary": 7800,
+    "rest": 35,
+    "start": "",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 19,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "Cedi Osman O",
+    "salary": 4300,
+    "rest": 6,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG/PG"
+    ],
+    "NAME": "Luke Kennard O",
+    "salary": 4900,
+    "rest": 5,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 29,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C/PF"
+    ],
+    "NAME": "C. Boucher O",
+    "salary": 3500,
+    "rest": 30,
+    "start": "",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 3,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Lonzo Ball O",
+    "salary": 3500,
+    "rest": 815,
+    "start": "",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 3,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "Malik Monk O",
+    "salary": 3500,
+    "rest": 10,
+    "start": "",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 12,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Trae Young O",
+    "salary": 8200,
+    "rest": 45,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 14,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "M. Bagley O",
+    "salary": 6100,
+    "rest": 6,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 15,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C/C"
+    ],
+    "NAME": "J. Jackson O",
+    "salary": 8800,
+    "rest": 5,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 28,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "K. Huerter O",
+    "salary": 3500,
+    "rest": 21,
+    "start": "",
+    "team": "SAC",
+    "opp": "OKC",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 111,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "L. Shamet O",
+    "salary": 3500,
+    "rest": 29,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 1,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "D. Robinson O",
+    "salary": 5200,
+    "rest": 1,
+    "start": "",
+    "team": "MIA",
+    "opp": "ATL",
+    "dvp": 15,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "Yuta Watanabe O",
+    "salary": 3500,
+    "rest": 38,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 5,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "Ja Morant O",
+    "salary": 3500,
+    "rest": 94,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF/SF"
+    ],
+    "NAME": "K. Johnson O",
+    "salary": 6400,
+    "rest": 1,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG/PG"
+    ],
+    "NAME": "Cody Martin O",
+    "salary": 3500,
+    "rest": 38,
+    "start": "",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 18,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "John Konchar O",
+    "salary": 4900,
+    "rest": 17,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 27,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "O. Okongwu O",
+    "salary": 5000,
+    "rest": 18,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 13,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C/PF"
+    ],
+    "NAME": "I. Stewart O",
+    "salary": 3500,
+    "rest": 21,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "P. Williams O",
+    "salary": 3500,
+    "rest": 74,
+    "start": "",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "D. Vassell O",
+    "salary": 3500,
+    "rest": 10,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF/SF"
+    ],
+    "NAME": "Saddiq Bey O",
+    "salary": 3500,
+    "rest": 29,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 13,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG/SF"
+    ],
+    "NAME": "Desmond Bane O",
+    "salary": 7500,
+    "rest": 12,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 29,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG/SG"
+    ],
+    "NAME": "I. Quickley O",
+    "salary": 8500,
+    "rest": 1,
+    "start": "",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG"
+    ],
+    "NAME": "LaMelo Ball O",
+    "salary": 3500,
+    "rest": 73,
+    "start": "",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 18,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "Jae&#x27;Sean Tate O",
+    "salary": 3600,
+    "rest": 4,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 1,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG/SF"
+    ],
+    "NAME": "S. Barnes O",
+    "salary": 3500,
+    "rest": 38,
+    "start": "",
+    "team": "TOR",
+    "opp": "IND",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "Greg Brown O",
+    "salary": 3500,
+    "rest": 94,
+    "start": "",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 18,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Q. Grimes O",
+    "salary": 3500,
+    "rest": 26,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 11,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "C. Bassey O",
+    "salary": 3500,
+    "rest": 129,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "Z. Williams O",
+    "salary": 3500,
+    "rest": 37,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 29,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF/C"
+    ],
+    "NAME": "S. Aldama O",
+    "salary": 6200,
+    "rest": 7,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 21,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "A. Sengun O",
+    "salary": 3500,
+    "rest": 29,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 14,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF/SF"
+    ],
+    "NAME": "B. Mathurin O",
+    "salary": 3500,
+    "rest": 34,
+    "start": "",
+    "team": "IND",
+    "opp": "TOR",
+    "dvp": 30,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PG/PF"
+    ],
+    "NAME": "J. Sochan O",
+    "salary": 3500,
+    "rest": 10,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 22,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "AJ Griffin O",
+    "salary": 3500,
+    "rest": 69,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 6,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG/SG"
+    ],
+    "NAME": "V. Williams O",
+    "salary": 6300,
+    "rest": 31,
+    "start": "",
+    "team": "MEM",
+    "opp": "SA",
+    "dvp": 29,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Tari Eason O",
+    "salary": 3500,
+    "rest": 98,
+    "start": "",
+    "team": "HOU",
+    "opp": "ORL",
+    "dvp": 14,
+    "OverUnder": 216,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "Mark Williams O",
+    "salary": 4000,
+    "rest": 122,
+    "start": "",
+    "team": "CHA",
+    "opp": "DAL",
+    "dvp": 6,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "M. Beauchamp O",
+    "salary": 3500,
+    "rest": 15,
+    "start": "",
+    "team": "MIL",
+    "opp": "BOS",
+    "dvp": 2,
+    "OverUnder": 228,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "D. Barlow O",
+    "salary": 3600,
+    "rest": 12,
+    "start": "",
+    "team": "SA",
+    "opp": "MEM",
+    "dvp": 16,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF/PF"
+    ],
+    "NAME": "S. Fontecchio O",
+    "salary": 5500,
+    "rest": 22,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 23,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "S. Umude O",
+    "salary": 3500,
+    "rest": 19,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 8,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "B. Coulibaly O",
+    "salary": 3500,
+    "rest": 23,
+    "start": "",
+    "team": "WAS",
+    "opp": "MIN",
+    "dvp": 5,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "C"
+    ],
+    "NAME": "D. Lively O",
+    "salary": 4900,
+    "rest": 8,
+    "start": "",
+    "team": "DAL",
+    "opp": "CHA",
+    "dvp": 17,
+    "OverUnder": 223,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF/SG"
+    ],
+    "NAME": "A. Thompson O",
+    "salary": 3500,
+    "rest": 30,
+    "start": "",
+    "team": "DET",
+    "opp": "PHI",
+    "dvp": 23,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SG"
+    ],
+    "NAME": "J. Clark O",
+    "salary": 3500,
+    "rest": 0,
+    "start": "",
+    "team": "MIN",
+    "opp": "WAS",
+    "dvp": 24,
+    "OverUnder": 224,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "SF"
+    ],
+    "NAME": "Seth Lundy O",
+    "salary": 3500,
+    "rest": 75,
+    "start": "",
+    "team": "ATL",
+    "opp": "MIA",
+    "dvp": 25,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  },
+  {
+    "positions": [
+      "PF"
+    ],
+    "NAME": "J. Phillips O",
+    "salary": 3500,
+    "rest": 26,
+    "start": "",
+    "team": "CHI",
+    "opp": "NY",
+    "dvp": 10,
+    "OverUnder": 0,
+    "TeamPoints": 0,
+    "proj": 0
+  }
+]
