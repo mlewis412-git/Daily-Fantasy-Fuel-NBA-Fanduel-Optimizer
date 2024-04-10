@@ -12,6 +12,9 @@ using System.Text.Json.Serialization;
 using Microsoft.VisualBasic.ApplicationServices;
 using System.IO; // For File operations
 using System.Collections.Generic; // For List<>
+using System.Formats.Asn1;
+using System.Globalization;
+using CsvHelper;
 
 namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
 {
@@ -424,6 +427,54 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
             }
         }
 
+        private List<(string LastName, string Team, string Position)> ParseFanDuelCSV(string filePath)
+        {
+            var players = new List<(string LastName, string Team, string Position)>();
+
+            using (var reader = new StreamReader(filePath))
+            using (var csv = new CsvHelper.CsvReader(reader, System.Globalization.CultureInfo.InvariantCulture))
+            {
+                csv.Read(); // Read the first row which is assumed to be the header
+                csv.ReadHeader(); // Read the header
+
+                while (csv.Read())
+                {
+                    var lastName = csv.GetField<string>("Last Name");
+                    var team = csv.GetField<string>("Team");
+                    var position = csv.GetField<string>("Position");
+                    players.Add((lastName, team, position));
+                }
+            }
+
+            return players;
+        }
+
+        private void UpdatePositionsFromCSV(string filePath)
+        {
+            var csvPlayers = ParseFanDuelCSV(filePath);
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    var gridFullName = row.Cells["NAME"].Value.ToString().Trim();
+                    var gridLastName = gridFullName.Split(' ').Last().Replace(" Q", ""); // Remove "Q" qualifier
+                    var gridTeam = row.Cells["TEAM"].Value.ToString().Trim();
+
+                    var matchingPlayer = csvPlayers.FirstOrDefault(p =>
+                        p.LastName.Equals(gridLastName, StringComparison.OrdinalIgnoreCase) &&
+                        p.Team.Equals(gridTeam, StringComparison.OrdinalIgnoreCase));
+
+                    if (matchingPlayer != default)
+                    {
+                        row.Cells["POS"].Value = matchingPlayer.Position;
+                    }
+                }
+            }
+        }
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             HighlightPositionalBeneficiaries();
@@ -441,6 +492,19 @@ namespace Daily_Fantasy_Fuel_NBA_Fanduel_Optimizer
                 }
             }
 
+        }
+
+        private void update_positions_button_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "CSV Files (*.csv)|*.csv"; // Filter to only show CSV files
+            openFileDialog.Title = "Select FanDuel NBA Players List CSV";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string selectedFilePath = openFileDialog.FileName;
+                UpdatePositionsFromCSV(selectedFilePath); // Call the update method with the selected file path
+            }
         }
     }
 }
